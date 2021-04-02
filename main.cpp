@@ -6,10 +6,12 @@ ull fib(ull n)
 {
     if(n==1)
         return 0;
+    while(n!=1){
     if(n==2)
         return 1;
     else
         return fib(n-1) + fib(n-2);
+    }
 }
 
 ull fibIter(ull a, ull b, ull count) {
@@ -24,7 +26,8 @@ ull fib2(ull n) {
 }
 
 int main(){
-fib(5);
+
+std::cout<<fib(7);
     
 return 0;
 }
